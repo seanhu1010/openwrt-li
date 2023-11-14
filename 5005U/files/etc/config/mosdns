@@ -1,5 +1,5 @@
 config mosdns 'config'
-	option enabled '1'
+	option enabled '0'
 	option configfile '/etc/mosdns/config.yaml'
 	option listen_port '5335'
 	option log_level 'error'
