@@ -1,3 +1,4 @@
+
 config imm_init
 	option ipv6 '1'
 	option lang '1'
@@ -19,3 +20,4 @@ config system
 config timeserver 'ntp'
 	option use_dhcp '0'
 	list server 'ntp.tencent.com'
+

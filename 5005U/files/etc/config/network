@@ -1,3 +1,4 @@
+
 config interface 'loopback'
 	option device 'lo'
 	option proto 'static'
@@ -26,3 +27,4 @@ config interface 'lan6'
 	list dns '2409:8060:20ea:100::1'
 	option ip6ifaceid '::2'
 	option ip6assign '64'
+
