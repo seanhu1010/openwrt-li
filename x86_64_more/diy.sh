@@ -10,8 +10,8 @@
 # git clone https://github.com/nantayo/my-pkg package/my-pkg
 
 # 移除 SNAPSHOT 标签
-# sed -i 's,-SNAPSHOT,,g' include/version.mk
-# sed -i 's,-SNAPSHOT,,g' package/base-files/image-config.in
+sed -i 's,-SNAPSHOT,,g' include/version.mk
+sed -i 's,-SNAPSHOT,,g' package/base-files/image-config.in
 
 # MosDNS
 find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
@@ -27,5 +27,5 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/vlmcsd package/vlmcsd
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-vlmcsd package/luci-app-vlmcsd
 
 # adguardhome
-svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/adguardhome
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+# git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome.git package/luci-app-adguardhome
