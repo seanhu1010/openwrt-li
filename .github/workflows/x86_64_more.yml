@@ -1,4 +1,4 @@
-name: Build ImmortalWrt for x84_x64_more
+name: Build ImmortalWrt for x86_64_more
 
 on:
   workflow_dispatch:
@@ -11,9 +11,9 @@ on:
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-23.05
-  CONFIG_FILE: x84_x64_more/.config
-  DIY_SH: x84_x64_more/diy.sh
-  FILES: x84_x64_more/files
+  CONFIG_FILE: x86_64_more/.config
+  DIY_SH: x86_64_more/diy.sh
+  FILES: x86_64_more/files
   TZ: Asia/Shanghai
 
 jobs:
@@ -94,7 +94,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: OpenWrt_x84_x64_more_${{ env.FILE_DATE }}
+        tag_name: OpenWrt_x86_64_more_${{ env.FILE_DATE }}
         files: openwrt/bin/targets/*/*/*-efi.img.gz
 
     - name: Delete old releases
@@ -104,4 +104,4 @@ jobs:
       with:
         keep_latest: 1
         delete_tags : true
-        delete_tag_pattern : x84_x64_more
+        delete_tag_pattern : x86_64_more
