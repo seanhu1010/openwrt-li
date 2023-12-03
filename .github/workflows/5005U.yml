@@ -95,7 +95,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: OpenWrt_5005U_${{ env.FILE_DATE }}
-        files: openwrt/bin/targets/*/*/*-efi.img.gz
+        files: openwrt/bin/targets/*/*/*_${{ env.FILE_DATE }}-efi.img.gz
 
     - name: Delete old releases
       uses: dev-drprasad/delete-older-releases@master
