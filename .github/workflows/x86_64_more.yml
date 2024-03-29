@@ -9,8 +9,8 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-23.05.2
+  REPO_URL: --single-branch --filter=blob:none https://github.com/immortalwrt/immortalwrt
+  REPO_BRANCH: openwrt-23.05
   CONFIG_FILE: x86_64_more/.config
   DIY_SH: x86_64_more/diy.sh
   FILES: x86_64_more/files
