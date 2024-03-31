@@ -9,7 +9,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt
+  REPO_URL: --single-branch --filter=blob:none https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-23.05
   CONFIG_FILE: 5005U/.config
   DIY_SH: 5005U/diy.sh

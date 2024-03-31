@@ -1,6 +1,6 @@
 
 config imm_init
-	option ipv6 '1'
+	option ipv6 '2'
 	option lang '1'
 	option anon_mount '1'
 	option system_chn '1'
